@@ -8,50 +8,47 @@
   </head>
   <body>
     <h1>Calculator 🧮</h1>
-
-    <main>
-        <noscript>
-            enable your javascript
-        </noscript>
-        <section class="calc-container">
-            <form name="calc-form">
-                <div class="calc">
+    <noscript>
+        enable your javascript
+    </noscript>
+    <main class="calc-container">
+        <form name="calc-form">
+            <div class="calc-form__container">
+                <section class="section-wrapper display">
                     <div class="row">
-                        <input id="a" name="a" hidden />
-                        <input id="b" name="b" hidden />
-                        <output for="a b" name="computation" class="calc-display"></output>
+                        <div>
+                            <input id="a" name="a" hidden />
+                            <input id="b" name="b" hidden />
+                            <output for="a b" name="computation" class="display-calc">0</output>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-wrapper digits-group" id="calc-numbers">
+                    <div class="row">
+                        <input type="button" value="7" name="digits" />
+                        <input type="button" value="8" name="digits" />
+                        <input type="button" value="9" name="digits" />
                     </div>
                     <div class="row">
+                        <input type="button" value="4" name="digits" />
+                        <input type="button" value="5" name="digits" />
+                        <input type="button" value="6" name="digits" />
                     </div>
                     <div class="row">
-                        <ul>
-                            <li><input type="button" value="7" /></li>
-                            <li><input type="button" value="8" /></li>
-                            <li><input type="button" value="9" /></li>
-                            <li><input type="button" value="x" /></li>
-                        </ul>
+                        <input type="button" value="1" name="digits" />
+                        <input type="button" value="2" name="digits" />
+                        <input type="button" value="3" name="digits" />
                     </div>
+                </section>
+                <section class="section-wrapper operators-group">
                     <div class="row">
-                        <ul>
-                            <li><input type="button" value="4" /></li>
-                            <li><input type="button" value="5" /></li>
-                            <li><input type="button" value="6" /></li>
-                            <li><input type="button" value="-" /></li>
-                        </ul>
+                        <input type="button" value="x" />
+                        <input type="button" value="-" />
+                        <input type="button" value="+" />
                     </div>
-                    <div class="row">
-                        <ul>
-                            <li><input type="button" value="1" /></li>
-                            <li><input type="button" value="2" /></li>
-                            <li><input type="button" value="3" /></li>
-                            <li><input type="button" value="+" /></li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                    </div>
-                </div>
-            </form>
-        </section>
+                </section>
+            </div>
+        </form>
     </main>
   </body>
 </html>
